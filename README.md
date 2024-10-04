@@ -1,10 +1,10 @@
 # Web-Dev
-Creating the first Women in Tech Website!
+**Creating the first Women in Tech Website!**
 
-Meet the Team
+**Meet the Team**
 
-Co-leads: Amal Latif and Rane Dy
+**Co-leads:** Amal Latif and Rane Dy
 
 
-Developers:
+**Developers:**
 
