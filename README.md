@@ -6,5 +6,5 @@
 **Co-leads:** Amal Latif and Rane Dy
 
 
-**Developers:**
+**Developers:** Ruchitha Gande
 
