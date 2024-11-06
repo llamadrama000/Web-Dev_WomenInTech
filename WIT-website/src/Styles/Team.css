@@ -1,0 +1,92 @@
+/* General styles for both sections */
+html, body {
+    height: auto; /* Ensure the body takes up full height */
+    margin: 0; /* Remove default margin */
+    background-color: #ffeffd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+.team-page {
+    width: 100%; /* Full viewport width */
+    height: auto; /* Full viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  
+  .title-team {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    margin-bottom: -2rem;
+  }
+  .team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 4.5rem;
+  }
+ 
+  /* Specific container for co-presidents to ensure they are on top */
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Evenly space items within each member */
+    width: 140px; /* You can adjust the width depending on your design */
+    height: auto;
+    text-align: center;
+  }
+  
+  .member-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  
+  .member-info h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-roles p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .member-links a {
+    color: #5e3370;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .member-links a:hover {
+    text-decoration: underline;
+  }
+  .row-7, .row-8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem; /* Space between members */
+    width:90%;
+    margin-top: 0;
+  }
+
+  
+
