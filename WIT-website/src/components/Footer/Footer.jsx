@@ -24,7 +24,13 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-nav">
-          <Link to="/about" className="footer-link">About</Link>
+          <div className="dropdown-container">
+            <span className="footer-link">About</span>
+            <div className="dropdown-menu">
+              <Link to="/about" className="dropdown-item">About Us</Link>
+              <Link to="/team" className="dropdown-item">Meet Our Team</Link>
+            </div>
+          </div>
           <Link to="/events" className="footer-link">Events</Link>
           <Link to="/join-us" className="footer-link">Join Us</Link>
           <Link to="/contact" className="footer-link">Contact</Link>
