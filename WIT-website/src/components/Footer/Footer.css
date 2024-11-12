@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%; /* Ensure full page height */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #c197d2;
+  padding: 1rem 0; /* Reduced from 2rem to 1rem */
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* Flexbox container for footer content */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Styling for footer navigation links */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  color: black;
+  margin: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0.7;
+  transition: background-color 0.5s ease;
+}
+
+.footer-link:hover {
+  opacity: 1;
+}
+
+/* Social media icons styling */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav {
+    margin-top: 0.5rem;
+  }
+
+  .social-links {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
