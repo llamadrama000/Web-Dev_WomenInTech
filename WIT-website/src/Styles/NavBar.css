@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center; /* Centers elements vertically */
     background-color: #c197d2;
-    height: 80px;
+    height: 60px;
 }
 
 /* Left side logo styling */
@@ -34,23 +34,28 @@
 
 /* Logo styling with a larger font size */
 .logo {
-    font-size: 2rem;
-    color: black;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-weight: 300;
-    font-family: 'Alegreya', serif;
-    line-height: 80px; /* Aligns with navbar height */
-    padding: 0; /* Remove extra padding */
+    line-height: 80px;
+    gap: 8px;
 }
 
-.logo:hover {
-    color: #FFD8FA;
+/* Logo image styling */
+.wit-logo {
+    width: 265px; /* Adjust the size of the logo */
+    height: 30px; /* Maintain aspect ratio */
 }
-/* Pink dot styling for logo */
+
 .pink-dot {
     color: #FFD8FA;
-    font-size: 2em;
+    font-size: 5rem; 
+    margin-left: 5px; 
+    align-items: center; 
+    margin-top: -33px;
+    margin-left: -20px;
 }
+
 
 /* Styling for navigation links */
 .nav-links a,

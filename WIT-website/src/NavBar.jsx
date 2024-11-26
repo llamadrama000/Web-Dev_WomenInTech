@@ -6,12 +6,17 @@ const Navbar = () => {
         <nav className="navBar">
             <div className="navbar-leftside">
                 <a href="/" className="logo">
-                    WIT<span className="pink-dot">.</span>
+                <img 
+                    src="src/assets/Logo/Women_In_Tech_Logo.png"
+                    className="wit-logo"
+                />
+                <span className="pink-dot">.</span>
                 </a>
             </div>
 
             <div className="navbar-right">
                 <ul className="nav-links">
+                    <li><a href="/home" className="nav-link">Home</a></li>
                     <li className="nav-item">
                         <div className="dropdown">
                             <button className='dropbutton'>
