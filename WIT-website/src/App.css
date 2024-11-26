@@ -18,6 +18,62 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Footer styling */
+.footer {
+  background-color: #c197d2; /* Purple background */
+  width: 100%; /* Full width */
+  position: absolute; /* Ensures it stays in normal document flow */
+  bottom: 0;
+  text-align: center;
+}
+
+/* Footer content container */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content inside footer */
+  gap: 1.5rem; /* Space between elements */
+}
+
+/* Navigation links styling */
+.footer-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-link {
+  color: black; /* Black text */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1rem; /* Font size */
+  padding: 0.5rem 1rem; /* Padding around the links */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.footer-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+}
+
+/* Social media icons styling */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  width: 48px; /* Size of social icons */
+  height: 48px;
+  transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slight grow effect on hover */
+  background-color: white; /* White background on hover */
+  border-radius: 50%; /* Round shape */
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
