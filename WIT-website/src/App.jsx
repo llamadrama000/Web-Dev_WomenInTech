@@ -4,7 +4,7 @@ import Events from './Pages/Events';
 import Contact from './Pages/Contact';
 import JoinUs from './Pages/JoinUs';
 import Home from './Pages/home.jsx';
-import Navbar from './NavBar';
+import Navbar from './components/NavBar.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Team from './Pages/Team.jsx';
 
@@ -15,13 +15,12 @@ function App() {
 
       <Navbar />
       <Routes>
-       
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/events" element={<Events/>}/>
-            <Route path="/join-us" element={<JoinUs/>}/>
+            <Route path="/join" element={<JoinUs/>}/>
             <Route path="/contact" element={<Contact/>}/>
-            <Route path="/team" element={<Team/>}/>
+            <Route path="/about/team" element={<Team/>}/>
           </Routes>
         <Footer />
     </Router>

@@ -47,15 +47,6 @@
     height: 30px; /* Maintain aspect ratio */
 }
 
-.pink-dot {
-    color: #FFD8FA;
-    font-size: 5rem; 
-    margin-left: 5px; 
-    align-items: center; 
-    margin-top: -33px;
-    margin-left: -20px;
-}
-
 
 /* Styling for navigation links */
 .nav-links a,
