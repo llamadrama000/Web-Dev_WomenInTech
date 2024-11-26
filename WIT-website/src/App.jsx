@@ -4,13 +4,18 @@ import Events from './Pages/Events';
 import Contact from './Pages/Contact';
 import JoinUs from './Pages/JoinUs';
 import Home from './Pages/home.jsx';
+import Navbar from './NavBar';
 import Footer from './components/Footer/Footer.jsx';
 import Team from './Pages/Team.jsx';
+
 
 function App() {
   return (
     <Router>
-          <Routes>
+
+      <Navbar />
+      <Routes>
+       
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/events" element={<Events/>}/>

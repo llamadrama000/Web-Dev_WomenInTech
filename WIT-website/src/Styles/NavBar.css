@@ -1,0 +1,116 @@
+/* Navbar container styling */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers elements vertically */
+    background-color: #c197d2;
+    height: 60px;
+}
+
+/* Left side logo styling */
+.navbar-leftside {
+    margin-left: 60px; /* Adjusts logo position if needed */
+}
+
+/* Right side navigation links styling */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 60px; /* Adjusts the space on the right side */
+}
+
+/* Navigation links container styling */
+.nav-links {
+    display: flex;
+    gap: 54px;
+    list-style: none;
+    align-items: center;
+}
+
+/* Individual nav items positioning */
+.nav-item {
+    position: relative;
+}
+
+/* Logo styling with a larger font size */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 80px;
+    gap: 8px;
+}
+
+/* Logo image styling */
+.wit-logo {
+    width: 265px; /* Adjust the size of the logo */
+    height: 30px; /* Maintain aspect ratio */
+}
+
+.pink-dot {
+    color: #FFD8FA;
+    font-size: 5rem; 
+    margin-left: 5px; 
+    align-items: center; 
+    margin-top: -33px;
+    margin-left: -20px;
+}
+
+
+/* Styling for navigation links */
+.nav-links a,
+.dropdown .dropbutton {
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 1.5rem; /* Adjusted font size */
+    font-family: 'Alegreya', serif;
+    font-weight: 300;
+    line-height: 80px; /* Aligns with navbar height */
+    padding: 0 16px; /* Only horizontal padding */
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.nav-links a:hover,
+.dropdown .dropbutton:hover {
+    color: #FFD8FA; /* Change to your preferred hover color */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content visibility on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links within the dropdown */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+/* Dropdown link hover effect */
+.dropdown-content a:hover {
+    background-color: #c197d2;
+}
+
+
