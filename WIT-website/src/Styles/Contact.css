@@ -1,0 +1,89 @@
+.ContactBackground {
+    background-color: #ffeffd; /* White background for the entire container */
+    min-height: 100vh; /* Full screen height */
+    width: 100vw; /* Full screen width */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Space out the form and icons */
+    align-items: center; /* Vertically center the form and icons */
+    padding: 20px; /* Add padding to prevent the form from touching screen edges */
+}
+
+.ContactContainer {
+    max-width: 1000px; /* Increased max width for a larger container */
+    width: 80%; /* Increase the width to 80% of the viewport */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners for the form container */
+    padding: 40px; /* Internal spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align content */
+    
+    /* Apply background image and adjust positioning */
+    background-image: url('../assets/Backgrounds/ContactUsImage.png');
+    background-position: right; /* Shift background image 50px further to the right */
+    background-repeat: no-repeat; /* Ensure the image is not repeated */
+    background-size: auto 50%; /* Scale the image height to 50% of the container */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack the form elements vertically */
+    justify-content: center; /* Vertically center the form */
+}
+
+
+.ContactTitle {
+    color: #c197d2; /* Purple header color */
+    font-size: 2rem; /* Corrected syntax for rem units */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ContactSubtitle {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ContactForm {
+    width: 100%;
+    max-width: 500px; /* Adjust form width */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    padding: 20px; /* Add padding for spacing inside the form */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.ContactInput, .ContactTextarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f8f9ff; /* Light background */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.ContactTextarea {
+    height: 100px;
+    resize: none; /* Disable resizing */
+}
+
+.ContactButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #c197d2; /* Purple button color */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.ContactButton:hover {
+    background-color: #a773b5; /* Darker purple on hover */
+}
+
+
