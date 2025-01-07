@@ -5,6 +5,7 @@ import { Eboard } from "../assets/Team/Eboard";
 
 function Team(){
   return (
+    <div className="parent-container">
     <div className="team-page">
       <div className="title-team">
         <h1 className="title">Meet the E-board</h1>
@@ -122,6 +123,7 @@ function Team(){
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
