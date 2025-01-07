@@ -5,6 +5,7 @@ import { Eboard } from "../assets/Team/Eboard";
 
 function Team(){
   return (
+    <div className="parent-container">
     <div className="team-page">
       <div className="title-team">
         <h1 className="title">Meet the E-board</h1>
@@ -12,7 +13,7 @@ function Team(){
 
       {/* Co-presidents section */}
       <div className="team-section">
-        {Eboard.filter(member => member.role.includes("Co-President")).map((Emember) => (
+        {Eboard.filter(member => member.role.includes("Founding Co-President")).map((Emember) => (
           <div className="member" key={Emember.id}>
             <img 
               src={Emember.picture} 
@@ -39,7 +40,7 @@ function Team(){
       {/* Eboard Section */}
       <div className="team-section">
         <div className="row-7">
-          {Eboard.filter(member => !member.role.includes("Co-President"))
+          {Eboard.filter(member => !member.role.includes("Founding Co-President"))
             .slice(0, 7) // First 7 members
             .map((Emember) => (
               <div className="member" key={Emember.id}>
@@ -66,7 +67,7 @@ function Team(){
         </div>
 
         <div className="row-8">
-          {Eboard.filter(member => !member.role.includes("Co-President"))
+          {Eboard.filter(member => !member.role.includes("Founding Co-President"))
             .slice(7) // Remaining members starting from the 8th one
             .map((Emember) => (
               <div className="member" key={Emember.id}>
@@ -122,6 +123,7 @@ function Team(){
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
