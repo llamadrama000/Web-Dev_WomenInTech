@@ -49,6 +49,7 @@ html, body, #root {
 }
 
 .footer-link:hover {
+  color:white;
   opacity: 1;
 }
 
@@ -84,7 +85,7 @@ html, body, #root {
   gap: 0.5rem;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.3s ease;
+  transition: visibility 2s, opacity 0.3s ease;
   min-width: 150px;
   margin-bottom: 0.5rem;
 }
@@ -95,7 +96,7 @@ html, body, #root {
 }
 
 .dropdown-item {
-  color: black;
+  color: #c197d2;
   text-decoration: none;
   padding: 0.5rem;
   transition: background-color 0.3s ease;
@@ -103,7 +104,7 @@ html, body, #root {
 }
 
 .dropdown-item:hover {
-  background-color: #f0f0f0;
+  background-color: #F3D9F3;
 }
 
 /* Social media icons styling */

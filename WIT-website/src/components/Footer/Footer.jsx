@@ -27,8 +27,8 @@ const Footer = () => {
           <div className="dropdown-container">
             <span className="footer-link">About</span>
             <div className="dropdown-menu">
-              <Link to="/about" className="dropdown-item">About Us</Link>
-              <Link to="/team" className="dropdown-item">Meet Our Team</Link>
+              <Link to="/about/aboutUs" className="dropdown-item">About Us</Link>
+              <Link to="/about/team" className="dropdown-item">Meet Our Team</Link>
             </div>
           </div>
           <Link to="/events" className="footer-link">Events</Link>
