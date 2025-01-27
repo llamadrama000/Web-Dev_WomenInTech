@@ -21,6 +21,7 @@
 }
 
 .about-title {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   color: #5A005A;
   font-size: 2.5rem;
@@ -40,7 +41,7 @@
 
 .description-section {
   flex: 1;
-  font-family: 'Georgia', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   color: #5A005A;
   
@@ -48,7 +49,7 @@
 
 .image-card {
   flex-shrink: 0;
-  width: 320px;
+  width: 650px;
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
@@ -68,16 +69,11 @@
   z-index: 1;
 }
 
-.image-placeholder {
-  background-color: #7E3C7E;
-  border-radius: 12px;
-  aspect-ratio: 4 / 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFFFFF;
-  font-size: 1.8rem;
-  font-family: 'Georgia', serif;
+.about-us-image {
+  width: 100%; /* Full width */
+  border-radius: 12px; /* Rounded corners */
+  aspect-ratio: 4 / 3; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fits without distortion */
   margin-bottom: 10px;
 }
 

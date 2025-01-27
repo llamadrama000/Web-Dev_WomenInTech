@@ -10,6 +10,7 @@ import GenovaImage from './TeamPics/Genova.jpeg'
 import AllysonImage from './TeamPics/Allyson.jpeg'
 import JarisseImage from './TeamPics/Jarisse.jpeg'
 import RaneImage from './TeamPics/Rane.jpg'
+import AlessandraImage from './TeamPics/Alessandra.png'
 
 
 export const Eboard = [
@@ -23,9 +24,9 @@ export const Eboard = [
   },
   {
       id: 1,
-      name: "Ally",
+      name: "Alessandra Gonzalez",
       role: ["Founding Co-President"],
-      picture: dummyIcon,  
+      picture: AlessandraImage,  
       linkedin: "https://www.linkedin.com/in/anayaday/",
   },
   {
@@ -42,13 +43,7 @@ export const Eboard = [
       picture: AshleyImage,  
       linkedin: "https://www.linkedin.com/in/ashley-romero-b25808132?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
-  {
-      id: 4,
-      name: "Dhruvi",
-      role: ["Director of Professional Development"],
-      picture: dummyIcon,  
-      linkedin: "https://www.linkedin.com/in/dhruvichoksi/",
-  },
+  
   {
       id: 5,
       name: "Boi Hoanh Lam",

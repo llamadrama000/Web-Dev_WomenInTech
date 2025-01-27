@@ -1,5 +1,7 @@
 import dummyIcon from "../Team/dummyIcon.png";
 import RaneImage from './TeamPics/Rane.jpg'
+import MelisaImage from './TeamPics/Melisa.jpg'
+import RuchithaImage from './TeamPics/Ruchitha.jpeg'
 
 export const teamInfo = [
     //co-leads
@@ -21,14 +23,14 @@ export const teamInfo = [
         id: 1,
         name: "Ruchitha Gande",
         role: ["Web Developer,", "UI/UX Designer"],
-        picture: dummyIcon,  
+        picture: RuchithaImage,  
         linkedin: "https://www.linkedin.com/in/amallatif/",
       },
       {
         id: 1,
-        name: "Melissa Gio",
+        name: "Melisa Gio",
         role: ["Web Developer,", "UI/UX Designer"],
-        picture: dummyIcon,  
+        picture: MelisaImage,  
         linkedin: "https://www.linkedin.com/in/amallatif/",
       },
       {

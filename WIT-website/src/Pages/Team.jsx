@@ -8,11 +8,11 @@ function Team(){
     <div className="parent-container">
     <div className="team-page">
       <div className="title-team">
-        <h1 className="title">Meet the E-board</h1>
+        <h1 className="EboardTitle">Meet the E-board</h1>
       </div>
 
       {/* Co-presidents section */}
-      <div className="team-section">
+      <div className="President-section">
         {Eboard.filter(member => member.role.includes("Founding Co-President")).map((Emember) => (
           <div className="member" key={Emember.id}>
             <img 
@@ -96,10 +96,10 @@ function Team(){
 
       {/* Web Dev Team Section */}
       <div className="title-team">
-        <h2 className="title">Meet the Website Development Team</h2>
+        <h2 className="WebDevTitle">Meet the Website Development Team</h2>
       </div>
 
-      <div className="team-section">
+      <div className="WebTeam-section">
         {teamInfo.map((WDmember) => (
           <div className="member" key={WDmember.id}>
             <img 
