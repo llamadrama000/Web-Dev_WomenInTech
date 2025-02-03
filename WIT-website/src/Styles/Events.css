@@ -1,1 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+.events-container {
+    background-color: #ffd8fa;
+    min-height: 85vh; /* Make sure the container takes up at least the full height of the viewport */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Vertically center the children */
+    align-items: center; /* Horizontally center the children */
+    padding-top: 40px;
+}
+
+
+.content-wrapper {
+    display: flex;
+    margin-top: 200px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 400px;
+}
+
+.calendar-container {
+    margin-left: 10.8vw;
+    background-color: #FADDF8;
+    padding: 16px 60px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(155, 79, 150, 0.4);
+    width: 100%; /* Adjusts width to give space for the meetings container */
+    overflow: hidden;  /* Prevents overflow */
+    margin-bottom: 100px;
+    max-width: 800px;  /* Fixed width to make it box-shaped */
+    height: 650px;  
+}
+
+.calendar-title {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #5A005A;
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    text-decoration: underline;
+}
+
+.meetings-container {
+    margin-right: 10.8vw;
+    background-color: #FADDF8;
+    padding: 16px 60px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(155, 79, 150, 0.4);
+    width: 100%; /* Ensures it's next to the calendar */
+    overflow: hidden;  /* Prevents overflow */
+    margin-bottom: 100px;
+    max-width: 800px;  /* Fixed width to make it box-shaped */
+    height: 650px;  
+    
+}
+
+.meetings-title {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #5A005A;
+    font-size: 2.7rem;
+    font-family: 'Georgia', serif;
+    text-decoration: underline;
+}
+
+
+/* Styling for the meeting details */
+.meeting-details-container {
+    padding: 0 10%;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+  }
+
+.meeting-details {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    color: #5A005A;
+    margin-top: 8px;
+}
+
+.meeting-details strong {
+    font-weight: bold;
+}
+
+/* Styling for the image */
+.image-container {
+    flex: 1;  /* Makes the image container take available space */
+}
+
+.event-image {
+    max-width: 700px;  /* Max width to prevent stretching */
+    width: 100%;  /* Ensures the image is responsive */
+}
+/* Discord logo styling */
+.discord-image {
+    width: 100px;  /* Adjust the size of the Discord logo */
+    height: 100px;  /* Keep aspect ratio */
+    margin-top: 10px;  /* Space between the image and text */
+    cursor: pointer;  /* Adds pointer cursor on hover to indicate it's clickable */
+
+  }
+  
+  .discord-image:hover {
+    opacity: 0.8;  /* Adds a hover effect to the image */
+  }
+  
 
