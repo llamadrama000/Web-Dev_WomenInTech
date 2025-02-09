@@ -44,7 +44,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   color: #5A005A;
-  
+  line-height: 2; /* Optional: improve readability */
 }
 
 .image-card {

@@ -6,9 +6,11 @@ import { Eboard } from "../assets/Team/Eboard";
 function Team(){
   return (
     <div className="parent-container">
+
+    
     <div className="team-page">
       <div className="title-team">
-        <h1 className="EboardTitle">Meet the E-board</h1>
+        <h1 className="EboardTitle">Meet the Eboard</h1>
       </div>
 
       {/* Co-presidents section */}
@@ -94,8 +96,9 @@ function Team(){
         </div>
       </div>
 
+
       {/* Web Dev Team Section */}
-      <div className="title-team">
+      <div className="title-webteam">
         <h2 className="WebDevTitle">Meet the Website Development Team</h2>
       </div>
 

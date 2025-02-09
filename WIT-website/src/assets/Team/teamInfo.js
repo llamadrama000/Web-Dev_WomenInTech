@@ -8,7 +8,7 @@ export const teamInfo = [
     {
         id: 0,
         name: "Rane Dy",
-        role: ["Project Manager,", "Co-lead,", "UI/UX Designer"],
+        role: ["Project Manager,", "Co-lead"],
         picture: RaneImage,  
         linkedin: "https://www.linkedin.com/in/ranedy/",
       },

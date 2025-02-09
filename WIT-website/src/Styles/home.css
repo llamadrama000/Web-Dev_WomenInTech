@@ -1,28 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-
-
-.home {
-  background-image: url('../assets/Backgrounds/homePage.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  min-height: 100vh;
+/* Ensure full viewport coverage and prevent scrolling */
+html, body {
+  height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Main container that takes up the full screen */
+.home {
+  background-image: url('../assets/Backgrounds/home1.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover ensures it fills screen properly */
+  background-position: center;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
+  justify-content: space-between; /* Adjusts spacing dynamically */
   margin: 0;
+  padding: 0;
 }
 
+/* Logo container - adjusted margin for responsiveness */
 .logo-container {
-  margin-top: 200px;
+  margin-top: 5vh; /* Responsive margin */
   padding: 16px 67px;
   box-shadow: 0px 4px 10px #5e336f;
   border-radius: 30px;
   height: 110px;
-  
   border: 2px solid #c197d2;
 }
 
@@ -31,16 +41,17 @@
   height: auto;
 }
 
+/* Carousel container - prevents overflow */
 .carousel-container {
   position: relative;
-  width: 100%;
-  height: 350px;
-  margin-top: 200px;
+  width: 90vw; /* Responsive width */
+  height: 70vh; /* Adjust height to fit within viewport */
   display: flex;
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Center the carousel and buttons */
+  align-items: center;
+  justify-content: center;
 }
 
+/* Navigation buttons */
 .prev-btn,
 .next-btn {
   position: relative;
@@ -56,7 +67,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%; /* Optional: make buttons circular */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add depth with shadow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .prev-btn {
@@ -67,6 +78,7 @@
   margin-left: 1vw; /* Space between button and carousel */
 }
 
+/* Carousel images */
 .carousel {
   display: flex;
   transition: transform 0.5s ease;
@@ -88,15 +100,14 @@
   border-bottom-width: 50px; /* Extra space for bottom to simulate Polaroid */
   border-radius: 5px; /* Optional: Slight rounding for modern Polaroid feel */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-
 }
-
 
 .carousel-image.center {
   background-color: #5e336f;
   opacity: 1;
 }
 
+/* Decorative dot above carousel images */
 .carousel-image::before {
   content: ''; /* Empty content to create the dot */
   position: absolute;
@@ -106,39 +117,67 @@
   width: 25px;
   height: 25px;
   background-color: #c197d2; /* Blue dot */
-  border-radius: 50%; /* Make it circular */
+  border-radius: 50%;
 }
+
+/* Ensure Social Media Icons Stay Below Title */
 .image-links {
-  display: flex; /* Flex container for social links */
-  flex-direction: column; /* Stack links vertically */
-  gap: 20px; /* Add spacing between each link */
-  margin-top: 200px; /* Positioning */
-  justify-content: flex-start;
-  margin-bottom: 20px;
-  position: relative;
-  left: -42%; /* Adjust this value to move it left or right */
+  position: relative; /* Keeps it inside the home container */
+  display: flex;
+  flex-direction: row; /* Display icons in a row */
+  gap: 20px; /* Space between each icon */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px; /* Prevents overlap */
 }
 
+/* Social links - keep only icons */
 .social-link {
-  display: flex; /* Flex container for each link */
-  flex-direction: row; /* Arrange logo and text in a row */
-  align-items: center; /* Align logo and text vertically */
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherit text color */
-  gap: 20px; /* Add spacing between logo and text */
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Social media logos */
 .social-logo {
-  width: 50px; /* Set a consistent size for logos */
+  width: 40px; /* Adjust size as needed */
   height: auto;
-  border-radius: 10px; /* Optional: Add rounding */
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.social-text {
-  font-size: 16px; /* Text size */
-  font-weight: bold; /* Make the text stand out */
-  text-align: left; /* Align text to the left */
+::-webkit-scrollbar-track {
+  background: #ffe0f0;
+  border-radius: 10px;
 }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #c197d2, #856293);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(193, 151, 210, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #a773b5, #6b4d8b);
+}
+
+/* Responsive Fix */
+@media (max-width: 1024px) {
+  .image-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+
+
+
 
 
 

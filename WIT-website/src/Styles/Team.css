@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow-y: auto; /* Ensures vertical scrolling */
+}
 
 .parent-container {
     height: auto; /* Ensure the body takes up full height */
@@ -7,6 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow-y: auto;
   }
 
 .team-page {
@@ -15,50 +23,44 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
     padding-top: 2rem;
+    margin-top: 0rem;
   }
 
   .President-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10rem;
-    margin-top: 22rem;
+    gap: 15rem;
+    margin-top:8rem;
   }
   
   .title-team {
-    width: 100%;
     text-align: center;
-    padding-top: 2rem;
-    margin-bottom: 1rem;
+    margin: 1rem auto; /* Centers the box horizontally and adds vertical margin */
+    padding: 1rem 2rem; /* Adds spacing inside the box */
+    border: 2px solid #c197d2; /* Box border */
+    box-shadow: 0px 4px 10px #5e336f; /* Box shadow */
+    border-radius: 30px; /* Rounded corners */
+    display: inline-block; /* Shrinks to fit content */
   }
   
   .EboardTitle {
-  font-family: 'Montserrat', sans-serif;
-  position: absolute;
-  top: 23%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 2px solid #c197d2;
-  box-shadow: 0px 4px 10px #5e336f;
-  border-radius: 30px;
-  height: 110px;
-  width: 35%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; /* Adjust font size */
+    color: #5e336f; /* Title color */
+    text-align: center;
+    line-height: 1.5; /* Adjust line spacing for multi-line titles */
+    word-wrap: break-word; /* Ensures long text wraps */
   }
-
+  
 
   .team-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10rem;
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
  
   /* Specific container for co-presidents to ensure they are on top */
@@ -74,8 +76,8 @@
   }
   
   .member-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover; /* Ensures the image fits inside the circle without stretching */
   }
@@ -110,23 +112,25 @@
     margin-top: -1.5%;
   }
 
+  .title-webteam {
+    margin: 1rem auto;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem; /* Adds spacing inside the box */
+    border: 2px solid #c197d2; /* Box border */
+    box-shadow: 0px 4px 10px #5e336f; /* Box shadow */
+    border-radius: 30px; /* Rounded corners */
+    display: inline-block; /* Shrinks to fit content */
+  }
+
   .WebDevTitle{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    position: relative;
-    top: 23%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 2.5rem; /* Adjust font size */
+    color: #5e336f; /* Title color */
     text-align: center;
-    border: 2px solid #c197d2;
-    box-shadow: 0px 4px 10px #5e336f;
-    border-radius: 30px;
-    height: 110px;
-    width: 35%;
-    margin-top: 80px;
+    line-height: 1.5; /* Adjust line spacing for multi-line titles */
+    word-wrap: break-word; /* Ensures long text wraps */
   }
 
   .WebTeam-section{
@@ -134,8 +138,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
   }
+
+  
 
 
   

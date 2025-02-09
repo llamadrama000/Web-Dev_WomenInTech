@@ -34,6 +34,23 @@ function Home() {
         />
       </div>
 
+      <div className="image-links">
+  {/* Instagram */}
+  <a href="https://www.instagram.com/calpolywit/" target="_blank" rel="noopener noreferrer" className="social-link">
+    <img src={instagramLogo} alt="Instagram" className="social-logo" />
+  </a>
+
+  {/* Discord */}
+  <a href="https://discord.com/invite/R5nrdnDFTq" target="_blank" rel="noopener noreferrer" className="social-link">
+    <img src={discordLogo} alt="Discord" className="social-logo" />
+  </a>
+
+  {/* Membership */}
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFZKpcMzfrsDnQopEoeKCzhD2rrWzPALADaOaxjcTWUdUcRg/viewform" target="_blank" rel="noopener noreferrer" className="social-link">
+    <img src={MembershipLogo} alt="Membership Form" className="social-logo" />
+  </a>
+</div>
+
       <div className="carousel-container">
         <button className="prev-btn" onClick={prevImage}>❮</button>
         <div className="carousel">
@@ -45,8 +62,8 @@ function Home() {
                 backgroundImage: `url(${image})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                width: '600px',
-                height: '600px',
+                width: '500px',
+                height: '500px',
                 borderRadius: '10px',
               }}
             />
@@ -56,25 +73,6 @@ function Home() {
       </div>
 
       {/* Social Media section */}
-<div className="image-links">
-  {/* Instagram */}
-  <a href="https://www.instagram.com/calpolywit/" target="_blank" rel="noopener noreferrer" className="social-link">
-    <img src={instagramLogo} alt="Instagram" className="social-logo" />
-    <span className="social-text">Instagram</span>
-  </a>
-
-  {/* Discord */}
-  <a href="https://discord.com/invite/R5nrdnDFTq" target="_blank" rel="noopener noreferrer" className="social-link">
-    <img src={discordLogo} alt="Discord" className="social-logo" />
-    <span className="social-text">Discord</span>
-  </a>
-
-  {/* Membership */}
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFZKpcMzfrsDnQopEoeKCzhD2rrWzPALADaOaxjcTWUdUcRg/viewform" target="_blank" rel="noopener noreferrer" className="social-link">
-    <img src={MembershipLogo} alt="Membership Form" className="social-logo" />
-    <span className="social-text">Membership Form</span>
-  </a>
-</div>
 
 
 

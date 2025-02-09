@@ -5,6 +5,8 @@
     align-items: center; /* Centers elements vertically */
     background-color: #c197d2;
     height: 60px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Left side logo styling */

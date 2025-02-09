@@ -1,83 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+/* Full-screen background container */
 .ContactBackground {
-    background-color: #ffeffd; /* White background for the entire container */
-    min-height: 100vh; /* Full screen height */
-    width: 100vw; /* Full screen width */
-    display: flex; /* Use flexbox for centering content */
-    justify-content: center; /* Space out the form and icons */
-    align-items: center; /* Vertically center the form and icons */
-    padding: 20px; /* Add padding to prevent the form from touching screen edges */
+    background-color: #ffeffd;
+    height: 100vh; /* Ensures full height */
+    width: 100vw; /* Ensures full width */
+    display: flex;
+    justify-content: center; /* Centers form horizontally */
+    align-items: center; /* Centers form vertically */
+    padding: 20px; /* Prevents elements from touching screen edges */
+    overflow: hidden; /* Prevents unwanted scrolling */
 }
 
+/* Contact Form Container */
 .ContactContainer {
-    max-width: 1000px; /* Increased max width for a larger container */
-    width: 80%; /* Increase the width to 80% of the viewport */
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    border-radius: 8px; /* Rounded corners for the form container */
-    padding: 40px; /* Internal spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: center; /* Center-align content */
-    
-    /* Apply background image and adjust positioning */
-    background-image: url('../assets/Backgrounds/ContactUsImage.png');
-    background-position: right; /* Shift background image 50px further to the right */
-    background-repeat: no-repeat; /* Ensure the image is not repeated */
-    background-size: auto 50%; /* Scale the image height to 50% of the container */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack the form elements vertically */
-    justify-content: center; /* Vertically center the form */
+    width: 90%; /* Ensures responsiveness */
+    max-width: 800px; /* Prevents excessive stretching */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-
+/* Contact Form Title */
 .ContactTitle {
     font-family: 'Montserrat', sans-serif;
-    color: #c197d2; /* Purple header color */
-    font-size: 2rem; /* Corrected syntax for rem units */
-    text-align: center;
+    color: #c197d2;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Contact Form Subtitle */
+.ContactSubtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.ContactSubtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
+/* Contact Form */
 .ContactForm {
     width: 100%;
-    max-width: 500px; /* Adjust form width */
+    max-width: 800px; /* Limits form width */
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between form elements */
-    padding: 20px; /* Add padding for spacing inside the form */
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better contrast */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    gap: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Input Fields */
 .ContactInput, .ContactTextarea {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     padding: 12px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-    background-color: #f8f9ff; /* Light background */
+    background-color: #f8f9ff;
     font-size: 14px;
     box-sizing: border-box;
 }
 
+/* Textarea Field */
 .ContactTextarea {
-    height: 100px;
-    resize: none; /* Disable resizing */
+    height: 200px;
+    resize: none;
 }
 
+/* Submit Button */
 .ContactButton {
     width: 100%;
     padding: 12px;
-    background-color: #c197d2; /* Purple button color */
+    background-color: #c197d2;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -85,11 +86,29 @@
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease;
 }
 
 .ContactButton:hover {
-    background-color: #a773b5; /* Darker purple on hover */
+    background-color: #a773b5;
 }
 
-
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .ContactContainer {
+        width: 95%; /* Expands form on smaller screens */
+        padding: 20px;
+    }
+    
+    .ContactForm {
+        max-width: 100%;
+    }
+    
+    .ContactTitle {
+        font-size: 1.8rem;
+    }
+    
+    .ContactSubtitle {
+        font-size: 0.9rem;
+    }
+}
