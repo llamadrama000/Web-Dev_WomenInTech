@@ -19,3 +19,6 @@
 - Ruchitha Gande  
 - Melissa Gio  
 - Shuvashree Basnet
+
+### Official Website:
+https://www.calpolywit.org/#/
